@@ -13,9 +13,7 @@ for i in `seq 1 1000`;
 do
 	echo "xzhan5" >/dev/tcp/${TCP_HOST}/${TCP_PORT}
 	MYEXIT=$?
-if [ "X$MYEXIT" = "X0" ]; then
-    echo "Connection successful. Exit code: $MYEXIT"
-else
+if [ "X$MYEXIT" != "X0" ]; then
     echo "Connection unsuccessful. Exit code: $MYEXIT"
 fi
 done
