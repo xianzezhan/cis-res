@@ -11,7 +11,7 @@ TCP_PORT=31337                # Port 31337 Back Orifice
 # Try to connect. (Somewhat similar to a 'ping' . . .) 
 for i in `seq 1 1000`;
 do
-	echo "xzhant5" >/dev/tcp/${TCP_HOST}/${TCP_PORT}
+	echo "xzhan5" >/dev/tcp/${TCP_HOST}/${TCP_PORT}
 	MYEXIT=$?
 if [ "X$MYEXIT" = "X0" ]; then
     echo "Connection successful. Exit code: $MYEXIT"
